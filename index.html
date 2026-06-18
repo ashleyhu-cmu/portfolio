@@ -90,78 +90,6 @@ nav a{
     color:var(--text);
 }
 
-/* HERO */
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    position:relative;
-}
-
-.hero::before{
-    content:"";
-    position:absolute;
-    width:600px;
-    height:600px;
-    background:radial-gradient(
-        circle,
-        rgba(216,238,243,0.9),
-        transparent 70%
-    );
-    top:-150px;
-    right:-100px;
-}
-
-.hero::after{
-    content:"";
-    position:absolute;
-    width:500px;
-    height:500px;
-    background:radial-gradient(
-        circle,
-        rgba(216,240,223,0.8),
-        transparent 70%
-    );
-    bottom:-150px;
-    left:-100px;
-}
-
-.hero-content{
-    position:relative;
-    z-index:2;
-    display:grid;
-    grid-template-columns:1fr auto;
-    gap:60px;
-    align-items:center;
-    width:100%;
-}
-
-.hero-text {
-    /* left column */
-}
-
-.hero h1{
-    font-size:5rem;
-    line-height:0.9;
-    margin-bottom:20px;
-}
-
-.hero p{
-    max-width:500px;
-    font-size:1.2rem;
-    margin-bottom:35px;
-    line-height:1.7;
-}
-
-.hero-photo {
-    width: 340px;
-    height: 420px;
-    object-fit: cover;
-    border-radius: 28px;
-    box-shadow: var(--shadow);
-    flex-shrink: 0;
-}
 
 .buttons{
     display:flex;
@@ -194,15 +122,26 @@ nav a{
 
 .about-grid{
     display:grid;
-    grid-template-columns:1fr 1.3fr;
+    grid-template-columns:1fr 1.5fr;
     gap:50px;
     align-items:center;
+    margin-bottom:40px;
 }
 
 .profile-img{
     width:100%;
     border-radius:25px;
     box-shadow:var(--shadow);
+}
+
+.about-wide{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+    object-position:center top;
+    border-radius:25px;
+    box-shadow:var(--shadow);
+    display:block;
 }
 
 .section-title{
@@ -473,54 +412,42 @@ footer{
     </div>
 </nav>
 
-<section class="hero">
-    <div class="container hero-content">
-        <div class="hero-text">
-            <h1>
-                Ashley Hu <br>
-                Mechanical Engineer
-            </h1>
 
-            <p>
-                Hello! Welcome to my portfolio
-            </p>
-
-    
-        </div>
-
-        <img
-            class="hero-photo"
-            src="images/profile.jpg"
-            alt="Ashley Hu">
-    </div>
-</section>
-
-<section id="about">
+<section id="about" style="padding-top:140px;">
     <div class="container">
+
         <div class="about-grid">
             <img
-            class="profile-img"
-            src="images/profile.jpg"
-            alt="Profile">
+                class="profile-img"
+                src="images/profile1.jpg"
+                alt="Ashley Hu">
 
             <div>
-                <h2 class="section-title">
-                    About Me
-                </h2>
+                <h2 class="section-title">About Me</h2>
 
                 <p>
-                    Hi, I'm Ashley Hu! I was born and raised in central NJ. I recently graduated with a B.S in Mechanical Engineering from Carnegie Mellon University 
-                    with a minor in Computer Science. 
+                    Hi, I'm Ashley Hu, a mechanical engineer from Central New Jersey.
+                    I graduated from Carnegie Mellon University Spring 2026, where I
+                    earned a B.S. in Mechanical Engineering with a minor in Computer Science.
                 </p>
 
                 <br>
 
                 <p>
-                    I have professional experience in the aerospace and EV industries. I am passionate about renewable energy and sustainable engineering, with a focus on
-                    electromechanical design and analytical modeling.
+                    My background spans the aerospace and electric vehicle industries,
+                    where I've contributed to projects involving battery pack characterization,
+                    high-volume production operations, and general electromechanical design.
+                    I'm driven by a passion for renewable energy, sustainable engineering, and the
+                    opportunity to make a real-world impact.
                 </p>
             </div>
         </div>
+
+        <img
+            class="about-wide"
+            src="images/profile2.jpg"
+            alt="Ashley Hu">
+
     </div>
 </section>
 
