@@ -199,26 +199,7 @@ nav a{
 }
 
 .project-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: start;
-    margin-bottom: 40px;
-}
-
-.project-layout.reverse {
-    direction: rtl;
-}
-
-.project-layout.reverse > * {
-    direction: ltr;
-}
-
-.project-hero-img {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: var(--shadow);
-    display: block;
+    margin-bottom: 30px;
 }
 
 .project-body h4 {
@@ -252,6 +233,16 @@ nav a{
     font-weight: 500;
     box-shadow: var(--shadow);
     color: var(--accent);
+}
+
+.project-hero-img {
+    height: 300px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    display: block;
+    margin-top: 30px;
 }
 
 .project-gallery {
@@ -313,20 +304,16 @@ footer{
     font-size: 3rem;
 }
 
-.project-layout {
-    grid-template-columns: 1fr;
-}
-
-.project-layout.reverse {
-    direction: ltr;
-}
-
 .project-gallery {
     grid-template-columns: repeat(2, 1fr);
 }
 
 .project-title {
     font-size: 2.4rem;
+}
+
+.project-hero-img {
+    height: 260px;
 }
 }
 
@@ -338,6 +325,10 @@ footer{
 
 .page-title {
     font-size: 2.5rem;
+}
+
+.project-hero-img {
+    height: 200px;
 }
 }
 
@@ -377,8 +368,6 @@ footer{
         <h2 class="project-title">Battery Discharge Station</h2>
 
         <div class="project-layout">
-            <img class="project-hero-img" src="images/project11.png" alt="Battery Discharge Station">
-
             <div class="project-body">
                 <h4>Overview</h4>
                 <p>
@@ -400,22 +389,23 @@ footer{
                     to cycle batteries more efficiently and accelerate battery pack certification.
                 </p>
             </div>
+
+            <img class="project-hero-img" src="images/project11.png" alt="Battery Discharge Station">
+            <img class="project-hero-img" src="images/project12.png" alt="Final Product">
         </div>
-        <img class="project-hero-img" src="images/project12.png" alt="Final Product">
+
     </div>
 </section>
 
 <!-- PROJECT 02 -->
 
-<section class="project-section" id="controls">
+<section class="project-section" id="fixture">
     <div class="container">
 
         <span class="project-number">02</span>
         <h2 class="project-title">Battery Module Test Fixture</h2>
 
-        <div class="project-layout reverse">
-            <img class="project-hero-img" src="images/project11.jpg" alt="Controls Design">
-
+        <div class="project-layout">
             <div class="project-body">
                 <h4>Overview</h4>
                 <p>
@@ -423,6 +413,8 @@ footer{
                     used in high-temperature thermal runaway tests.
                 </p>
             </div>
+
+            <img class="project-hero-img" src="images/project11.jpg" alt="Battery Module Test Fixture">
         </div>
 
     </div>
@@ -436,9 +428,7 @@ footer{
         <span class="project-number">03</span>
         <h2 class="project-title">Low-Voltage Battery Pack</h2>
 
-        <div class="project-layout reverse">
-            <img class="project-hero-img" src="images/project2.jpg" alt="Controls Design">
-
+        <div class="project-layout">
             <div class="project-body">
                 <h4>Overview</h4>
                 <p>
@@ -446,6 +436,8 @@ footer{
                     in a 48% mass reduction compared to previous packs.
                 </p>
             </div>
+
+            <img class="project-hero-img" src="images/project2.jpg" alt="Low-Voltage Battery Pack">
         </div>
 
     </div>
@@ -460,20 +452,17 @@ footer{
         <h2 class="project-title">Automatic Laundry Folder</h2>
 
         <div class="project-layout">
-            <img class="project-hero-img" src="images/project31.jpg" alt="Manufacturing Project">
-
             <div class="project-body">
                 <h4>Overview</h4>
                 <p>
-                    I worked in a team of 5 to create an automated laundry folder that detected clothing placement,shape, and size, and adjusted
+                    I worked in a team of 5 to create an automated laundry folder that detected clothing placement, shape, and size, and adjusted
                     its folding mechanisms accordingly. As sensing lead, I was in charge of optimizing sensor placement, noise reduction,
                     and software for data processing and decision-making.
                 </p>
             </div>
-        </div>
 
-        <div class="project-gallery">
-            <img src="images/project32.jpg" alt="Final Product">
+            <img class="project-hero-img" src="images/project31.jpg" alt="Automatic Laundry Folder">
+            <img class="project-hero-img" src="images/project32.jpg" alt="Final Product">
         </div>
 
     </div>
